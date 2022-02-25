@@ -1,0 +1,56 @@
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    font-family: sans-serif;
+    text-align: -webkit-center;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    background: white;
+    width: 400px;
+    height: 400px;
+    margin-top: 50vh;
+    transform: translateY(-77%);
+}
+
+.container:after {
+    content: "";
+    display: block;
+}
+
+.controlpanel {
+    width: 400px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(-252px);
+}
+
+.greyBtn {
+    background-color: white;
+    background-image: linear-gradient( 
+        to top right, 
+        black, 
+        #ffffff );
+}
+.rainbowBtn {
+    background-color: red;
+  background-image:
+    linear-gradient(
+        to right, 
+        red, 
+        #f06d06, 
+        rgb(255, 255, 0), 
+        green
+    );
+}
